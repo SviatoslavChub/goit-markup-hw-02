@@ -1,10 +1,11 @@
 :root{
-background-color:#F5F5F5;
-
-logo-item-decor : #000000;
-main-color : #212121;
-secondary-color : #757575;
-blue-color : #2196F3;
+--logo-item-decor:#000000;
+--main-color:#212121;
+--secondary-color:#757575;
+--blue-color:#2196F3;
+--first-font : 'Roboto', sans-serif;
+--secondary-font : 'Raleway',sans-serif;
+--white-general-color : #FFFFFF;
 }
 
 .link{
@@ -16,73 +17,67 @@ list-style: none;
 
 body{
 color: var(--main-color);
-background-color: #F5F5F5;
-font-family: 'Roboto', sans-serif;
-font-weight: 700;
-font-size: 18px;
-line-height: calc(36/18);
+background-color: var(--white-general-color);
+font-family: var(--first-font);
 }
 
 .logo-link{
 color: var(--logo-item-decor);
+font-family: var(--secondary-font);
 font-weight: 500;
-font-family: 'Raleway', sans-serif;
 font-size: 26px;
 line-height : calc(31/26);
 }
 
-.navigation-list{
-font-weight: 500;
+.navigation-list {
+font-family: var(--first-font);
 color: var(--main-color);
+font-weight: 500;
 font-size: 14px;
 line-height:calc{16/14};
+letter-spacing: 0.02em;
 }
+.navigation-link .link:hover, 
+.navigation-link .link:focus {
+}
+ 
 
-.navigation-list .link{
-color: var(--main-color);
-}
-.navigation-list .link:hover,
-.navigation-list.link:focus {
-color: #2196F3;
-}
 
-.list-adress{
-color: var(--blue-color);
+.list-adress-header{
+color: var(--secondary-color);
 background-color: transparent;
 font-weight: 500;
 font-size: 14px;
 line-height: calc(16/14);
-color: #757575;
-
-}
-.list-adress .link {
-color: var(--main-color);
 }
 
-.list-adress .link:hover,
-.list-adress.link:focus {
-    color: #2196F3;
+.list-adress-header .link {
+color: var(--secondary-color);
+}
+
+.list-adress-header .link:hover,
+.list-adress-header .link:focus{
+color: var(--blue-color);
 }
 
 .hero-list{
 color: var(--logo-item-decor);
 background-color: #F5F4FA;
 font-weight: 500;
-font-size: 16px;
 line-height:calc(26/16);
 cursor: pointer;
 }
 
-.hero-list .link{
+.hero-list .main-button{
 color: var(--main-color);
 }
   
-.hero-list .link:hover,
-.hero-list .link:focus{
+.hero-list .main-button:hover,
+.hero-list .main-button:focus{
 color: var(--blue-color);
 }
 
-.hero-list .link:active{
+.hero-list .main-button:active{
 color: var(--blue-color);
 }
 
@@ -94,9 +89,30 @@ line-height:calc(36/18);
 }
 
 .hero-text{
-color: #757575;
-font-weight: 400;
-font-size: 16px;
+color: var(--secondary-color);
 line-height:calc(30/16);    
+}
+.list-adress-footer {
+    color: var(--footer-adress-color);
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+}
+.list-adress-footer {
+    color: var(--white-general-color);
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
 
 }
+
+.list-adress-footer .link {
+color: var(--secondary-color);}
+
+
+
+.list-adress-footer .link:hover,
+.list-adress-footer .link:focus {
+color: var(--blue-color);
