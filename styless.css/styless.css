@@ -15,6 +15,7 @@ text-decoration: none;
 list-style: none;
 }
 
+
 body{
 color: var(--main-color);
 background-color: var(--white-general-color);
@@ -34,16 +35,15 @@ font-family: var(--first-font);
 color: var(--main-color);
 font-weight: 500;
 font-size: 14px;
-line-height:calc{16/14};
+line-height : calc(16/14);
 letter-spacing: 0.02em;
 }
 .navigation-link .link:hover, 
 .navigation-link .link:focus {
 }
- 
+   
 
-
-.list-adress-header{
+.list-adress{
 color: var(--secondary-color);
 background-color: transparent;
 font-weight: 500;
@@ -51,12 +51,12 @@ font-size: 14px;
 line-height: calc(16/14);
 }
 
-.list-adress-header .link {
+.list-adress .link {
 color: var(--secondary-color);
 }
 
-.list-adress-header .link:hover,
-.list-adress-header .link:focus{
+.list-adress .link:hover,
+.list-adress .link:focus{
 color: var(--blue-color);
 }
 
@@ -92,27 +92,4 @@ line-height:calc(36/18);
 color: var(--secondary-color);
 line-height:calc(30/16);    
 }
-.list-adress-footer {
-    color: var(--footer-adress-color);
-    background-color: transparent;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16/14);
-}
-.list-adress-footer {
-    color: var(--white-general-color);
-    background-color: transparent;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16/14);
 
-}
-
-.list-adress-footer .link {
-color: var(--secondary-color);}
-
-
-
-.list-adress-footer .link:hover,
-.list-adress-footer .link:focus {
-color: var(--blue-color);
