@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
 :root{
 --main-color:#2E2F42;
 --secondary-color:#434455;
