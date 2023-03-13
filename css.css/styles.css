@@ -32,18 +32,21 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: 0.03em;
 }
 
-.title-span {
-    color: #4D5AE5;
+.footer-logo {
+    color: var(--logo-iteam-decor);
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: 0.03em;
 }
 
-.footer-title-span {
+.footer-logo-span {
     color: var(--white-secondary-color);
+    letter-spacing: 0.03em;
 }
 
 .navigation-link {
@@ -65,7 +68,6 @@ body {
 
 .adress-link {
     color: var(--secondary-color);
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -82,10 +84,16 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white-general-color);
+
 }
 
 .main-section {
     background-color: var(--main-color);
+    height: 600px;
+    width: 1440px;
+    left: 0px;
+    top: 72px;
+    border-radius: [object Object]px;
 }
 
 .main-button {
@@ -93,17 +101,15 @@ body {
     color: var(--white-general-color);
     background-color: var(--logo-iteam-decor);
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
-    align-items: center;
     letter-spacing: 0.04em;
     cursor: pointer;
-    width: 105px;
-    height: 24px;
     padding: 16px 32px;
-    left: 636px;
-    top: 428px;
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
 }
+
 
 .main-button:hover,
 .main-button:focus {
@@ -155,14 +161,14 @@ body {
 
 .section-team {
     background: var(--section-team-color);
-    ;
+
 }
 
 .footer-about {
     background-color: var(--main-color);
 }
 
-.logo-about {
+.footer-logo {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-color);
@@ -184,6 +190,19 @@ body {
     color: var(--secondary-color);
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 .apps-subtitle {
     font-weight: 700;
     font-size: 36px;
@@ -194,7 +213,7 @@ body {
     color: var(--main-color);
 }
 
-.subject-team {
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -202,6 +221,15 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--main-color);
+}
+
+.subtitle-team {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
 }
 
 .title-team {
