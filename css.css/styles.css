@@ -92,10 +92,7 @@ body {
 
 .main-section {
     background-color: var(--main-color);
-    height: 600px;
-    width: 1440px;
-    left: 0px;
-    top: 72px;
+    
 
 
 }
@@ -113,6 +110,7 @@ body {
     min-width: 169px;
     height: 56px;
     border: none;
+    font-size: 16px;
 }
 
 
@@ -230,10 +228,10 @@ body {
 .subtitle-team {
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-color);
 }
 
 .title-team {
@@ -250,4 +248,10 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+}
+
+.footer-text {
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--footer-color);
 }
